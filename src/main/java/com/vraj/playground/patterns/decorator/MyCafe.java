@@ -13,6 +13,7 @@ public class MyCafe {
 
 	public static void main(String[] args) {
 		Beverage beverage = new Espresso();
+		beverage.setSizeFactor(1.2);
 		beverage = new HotChoclate(beverage);
 		System.out.println(
 				"you coffee: " + beverage.getDescription() + ", is ready. You owe " + beverage.cost() + " dollars!");

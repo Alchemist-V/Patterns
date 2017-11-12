@@ -16,7 +16,7 @@ public class HotChoclate extends ToppingDecorator {
 
 	@Override
 	public double cost() {
-		return 0.20 + beverage.cost();
+		return (0.20 + beverage.cost()) * beverage.getSizeFactor();
 	}
 
 }
